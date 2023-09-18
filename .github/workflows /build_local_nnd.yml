@@ -1,0 +1,12 @@
+name: Echo Tests
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: dev-large
+    steps:
+      - uses: actions/checkout@v3
+      - name: Say Hello on dew-large runner
+        run: |
+          echo "Hello World!"
