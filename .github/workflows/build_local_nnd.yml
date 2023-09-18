@@ -1,4 +1,4 @@
-name: Echo Tests
+name: Build local nnd image and push it to ecr
 on:
   workflow_dispatch:
 
@@ -7,6 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Say Hello on dew-large runner
+      - name: Say Hello and print runner infp
         run: |
           echo "Hello World!"
+          hostnamectl
