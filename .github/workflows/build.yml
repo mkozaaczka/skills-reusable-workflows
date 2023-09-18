@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
       branches:
-      - "add_build.yml"
+      - 'add_build_yml'
 
 jobs:
   build:
